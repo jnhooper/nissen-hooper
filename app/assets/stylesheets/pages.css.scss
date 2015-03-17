@@ -1,3 +1,24 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.site-title{
+	font-size:65pt;
+	margin-top:0;
+	color:white;
+}
+
+.title-nav{	
+	background-color:rgba(0,0,0,0.5);
+	color:rgba(255,255,255, 0.7);
+}
+
+body{
+	margin:0px;
+	//http://orig13.deviantart.net/9249/f/2015/075/d/1/florientine_blues_by_nisse038-d8m0s30.jpg
+	//http://fc07.deviantart.net/fs71/f/2010/250/6/4/one_more_step_by_nisse038-d2y8xxo.jpg
+	background:url("http://fc07.deviantart.net/fs71/f/2010/250/6/4/one_more_step_by_nisse038-d2y8xxo.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	backgound-size:cover;
+}
