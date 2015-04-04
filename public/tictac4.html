@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title></title>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/handlebars-v3.0.0.js"></script>
+    <script src="scripts/nav.js"></script>
+    <script id="navbar" type="x-handlebars-template">
+        <div class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+            {{#each this}}
+            <li class="active">
+                <a href={{address}}>{{name}}</a>
+            </li>
+            {{/each}}
+            </ul>
+        </div>
+    </script>
+
+</head>
+<body>
+<div style="position:absolute" id="nav">
+</div>
+<script src="scripts/tictac4/three.min.js"></script>
+<script src="scripts/tictac4/OrbitControls.js"></script>
+<script src="scripts/tictac4/learning.js"></script>
+</body>
+</html>
