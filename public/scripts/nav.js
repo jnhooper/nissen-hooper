@@ -20,10 +20,11 @@ $(function(){
         }
     }
     var mobile = detectmob();
+    var notMobile = !mobile;
     console.log(mobile, "mobile");
 
     var links=[
-        {name:"home", address:"/index.html", mobileFriendly:false},
+        {name:"home", address:"/index.html", mobileFriendly:true},
         {name:"Tic-tac-4", address:"/tictac4.html", mobileFriendly:false},
         {name:"SVG star", address:"/customStar.html", mobileFriendly:true},
         {name:"Block Hunter", address:"/firstPersonShooter.html", mobileFriendly: true}
