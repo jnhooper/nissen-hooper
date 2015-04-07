@@ -11,22 +11,25 @@
     <script id="navbar" type="x-handlebars-template">
         <div class="navbar navbar-default">
             <ul class="nav navbar-nav">
-            {{#each this}}
+                {{#each this}}
                 {{~#if notMobile}}
-
-            <li class="active">
-                <a href={{address}}>{{name}}</a>
-            </li>
+                <li class="active">
+                    <a href={{address}}>{{name}}</a>
+                </li>
                 {{else}}
                 {{#if mobileFriendly}}
-            <li class="active">
-                <a href={{address}}>{{name}}</a>
-            </li>
+                <li class="active">
+                    <a href={{address}}>{{name}}</a>
+                </li>
                 {{/if}}
                 {{~/if~}}
-            {{/each}}
+                {{/each}}
             </ul>
+
         </div>
+        {{~#if mobile}}
+        <h4 class="small">For more examples please come back on a non mobile device</h4>
+        {{/if}}
     </script>
 
 </head>
