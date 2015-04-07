@@ -8,6 +8,6 @@ $(function(){
         {name:"Tic-tac-4", address:"/tictac4.html"},
         {name:"SVG star", address:"/customStar.html"}
     ];
-    var template = Handlebars.compile(tempScript)
+    var template = Handlebars.compile(tempScript);
     $("#nav").append(template(links));
 })
