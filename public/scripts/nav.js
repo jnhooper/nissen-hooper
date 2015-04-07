@@ -20,14 +20,16 @@ $(function(){
         }
     }
     var mobile = detectmob();
-    var notMobile = !mobile;
-    console.log(mobile, "mobile");
 
+    console.log(mobile, "mobile");
+    var mobileDisplay= function(isFriendly){
+        return isFriendly||!mobile;
+    };
     var links=[
-        {name:"home", address:"/index.html", mobileFriendly:true},
-        {name:"Tic-tac-4", address:"/tictac4.html", mobileFriendly:false},
-        {name:"SVG star", address:"/customStar.html", mobileFriendly:true},
-        {name:"Block Hunter", address:"/firstPersonShooter.html", mobileFriendly: true}
+        {name:"home", address:"/index.html", mobileFriendly:mobileDisplay(true)},
+        {name:"Tic-tac-4", address:"/tictac4.html", mobileFriendly:mobileDisplay(false)},
+        {name:"SVG star", address:"/customStar.html", mobileFriendly:mobileDisplay(true)},
+        {name:"Block Hunter", address:"/firstPersonShooter.html", mobileFriendly: mobileDisplay(true)}
     ];
     var template = Handlebars.compile(tempScript);
     $("#nav").append(template(links));
