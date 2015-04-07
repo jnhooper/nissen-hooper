@@ -12,9 +12,17 @@
         <div class="navbar navbar-default">
             <ul class="nav navbar-nav">
             {{#each this}}
+                {{~#if mobile}}
+                    {{#if mobileFriendly}}
             <li class="active">
                 <a href={{address}}>{{name}}</a>
             </li>
+                    {{/if}}
+                {{else}}
+            <li class="active">
+                <a href={{address}}>{{name}}</a>
+            </li>
+                {{~/if~}}
             {{/each}}
             </ul>
         </div>
