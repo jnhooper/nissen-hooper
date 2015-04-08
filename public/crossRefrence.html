@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<script src="scripts/vendor/jquery.js"></script>
+<script src="scripts/vendor/underscore.js"></script>
+<script src="scripts/vendor/Backbone.js"></script>
+<script src="scripts/crossrefrence/Olga.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/olgaScript.css">
+<script type="text/tempate" id="masterCollection">
+	<table class="table table-striped <%= classy %>">
+	<tr>
+	<% for(var i=0; i<ids.length; i++){ %>
+		<th><%= ids[i] %></th>
+		<% } %>
+	</tr>
+	</table>
+</script>
+<script type="text/tempate" id="BookTemp">
+	<tr>
+	<% for(var i=0; i<ids.length; i++){ %>
+		<td><%= model[ids[i]] %></td>
+		<% } %>
+	</tr>
+</script>
+</head>
+<body>
+<div class='Forms'>
+    <div class="form-group">
+        <label for="textA">Small List</label>
+        <textarea class="form-control" id="textA"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="key">Key for small list: </label>
+        <input class="form-control" type="text" id="keyA">
+    </div>
+
+    <div class="form-group">
+        <label for="textB">Master List</label>
+        <textarea class="form-control" id="textB"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="keyB">Key for Master list: </label>
+        <input class="form-control" type="text" id="keyB">
+    </div>
+
+    <br>
+    <button class="btn btn-info">Cross Reference</button>
+</div>
+<div class="data"></div>
+
+</body>
+</html>
