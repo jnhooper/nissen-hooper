@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+
+  </head>
+  <body>
+		<ul class="nav nav-pills" id="myTab">
+		  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+		  <li><a href="#profile" data-toggle="tab">Profile</a></li>
+		  <li><a href="#messages" data-toggle="tab">Messages</a></li>
+		  <li><a href="#settings" data-toggle="tab">Settings</a></li>
+		</ul>
+
+		<div class="tab-content">
+		  <div class="tab-pane fade in active" id="home">
+			<div class="col-md-4">
+				  <div class="row">
+				  <div class="input-group">
+					<span class="input-group-addon">TE</span>
+					<input type="text" class="form-control" placeholder="Enter a test...">
+					<span class="input-group-btn">
+						<input type="button" value="Get" class="btn btn-primary">
+					</span>
+					
+				</div>
+			</div>
+		  <div class="tab-pane fade" id="profile">
+			<div class="input-group">
+				<input type="text" class="form-control">
+				<span class="input-group-btn">
+					<input type="button" value="Cry some more!" class="btn btn-danger">
+				</span>
+		  </div>
+		  <div class="tab-pane fade" id="messages">Messages</div>
+		  <div class="tab-pane fade" id="settings">Settings</div>
+		</div>
+
+		<script>
+		  $(function () {
+			$('#myTab a:last').tab('show')
+		  })
+		</script>
+	<script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

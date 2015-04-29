@@ -1,0 +1,27 @@
+<div navigation></div>
+<div class="col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-lg-10 col-md-10 col-xs-10" ng-controller="eodReportCtrl">
+    <input class="center-block" placeholder="Pick a Date" date-picker callback="setDate">
+    <div ng-show="reportDate">
+        <button class="btn btn-primary btn-sm pull-right" ng-click="downloadCSV()"><i class="fa fa-file"></i> CSV</button>
+        <div class="btn-group">
+            <button type="button" ng-class="{selectedTab:isSelectedTab(1)}" class="tab btn" ng-click="selectTab(1)">Bar Graph</button>
+            <button type="button" ng-class="{selectedTab:isSelectedTab(2)}" class="tab btn" ng-click="selectTab(2)">Pie Chart</button>
+        </div>
+        <br>
+        <br>
+        <div ng-show="isSelectedTab(1)">
+            <div bar-chart data=reportGraphReady shown=isSelectedTab(1) checked=true></div>
+        </div>
+
+        <div ng-show="isSelectedTab(2)">
+            <div money-pie data=reportGraphReady checked=true hover-data="setDetail(data)"></div>
+            <h1 ng-show="detail">{{detail.Name}}:<small>{{detail.Value | currency}}</small></h1>
+        </div>
+
+        <div eod-table></div>
+
+
+
+
+    </div>
+</div>

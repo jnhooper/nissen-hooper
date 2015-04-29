@@ -1,0 +1,4 @@
+<table class="table table-bordered">
+    <tr ng-repeat="row in tableArray">
+        <td ng-repeat="data in row" ng-click=selectData(data) class=" {{selectedName(data)}}">{{data.Name}}: {{data.Value}}</td></tr>
+</table>
