@@ -6,7 +6,7 @@ OffendedApp.controller('mainCtrl', function($scope){
             _.each(offensive,function(word){
                 if(word!="" &&word!=" "){
                 var re = new RegExp(word, 'g');
-                txt = txt.replace(re, 'puppies ');
+                txt = txt.replace(re, 'puppies');
                 }
             });
         }
