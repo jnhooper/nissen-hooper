@@ -9,10 +9,24 @@ SimApp.controller('mainCtrl', function($scope){
 
     var ids = _.uniq(_.pluck(testData, "Id"));
     $scope.raw = testData;
+
+
     $scope.batch_nums=ids;
-    console.log($scope.batch_nums);
+    //$scope.filterBatch={};
+    //$scope.togleBotFilter=function(){
+    //    console.log("hello");
+    //  if($scope.filterBatch.robot){
+    //      $scope.filterBatch.robot = !$scope.filterBatch.robot;
+    //  }
+    //  else{
+    //      $scope.filterBatch.robot  = true; //looking for bots
+    //  }
+    //};
+
+
     var keys = [];
 
+    //get the tests and ids
     _.each(ids, function(ID){
         if($scope["test"+ID]==undefined) {
             $scope["test" + ID]=_.where(testData,{Id: ID});
@@ -47,20 +61,20 @@ SimApp.controller('mainCtrl', function($scope){
 
 
 
+    //$scope.readyGraph=function(){
+        _.each(ids, function (batch) {
+            _.each($scope["test" + batch], function (test, index) {
+                var data = [];
 
-    _.each(ids,function(batch){
-        _.each($scope["test"+batch],function(test, index){
-            var data = [];
-
-            _.each(keys, function(key){//change structure
-                if(!isNaN(parseFloat(test[key]))) {
-                    data.push({Name: key, Value: parseFloat(test[key])})
-                }
-            });
-
-            $scope["test"+batch][index]=data;
-        })
-    });
+                _.each(keys, function (key) {//change structure
+                    if (!isNaN(parseFloat(test[key]))) {
+                        data.push({Name: key, Value: parseFloat(test[key])})
+                    }
+                });
+                $scope["test" + batch][index] = data;
+            })
+        });
+    //}
 
 
 
@@ -95,12 +109,6 @@ SimApp.controller('mainCtrl', function($scope){
         $scope.selectedBatch = $scope["test"+id];
 
         $scope.batch_info= _.findWhere(testData, {Id:id});
-        //    id:id,
-        //    lanes:$scope.selectedBatch[0].Lanes,
-        //    express: _.findWhere($scope.selectedBatch[0],{Name:"Express Lanes"}),
-        //    self_bag:$scope.selectedBatch[0]["Self-Bag"],
-        //    arrival:$scope.selectedBatch[0]["Arrival Rate"]
-        //};
         console.log($scope.batch_info);
         $scope.dataTable=[];
         $scope.data=[];
