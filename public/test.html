@@ -9,17 +9,41 @@
 <body>
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/vendor/materialize/materialize.min.js"></script>
-    <script src="scripts/ui/ui.js"></script>
+
     <nav>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#!">First Sidebar Link</a></li>
-            <li><a href="#!">Second Sidebar Link</a></li>
+    <ul id="slide-out" class="side-nav">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">Examples<i class="mdi-navigation-arrow-drop-down"></i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a target="_blank" href="customStar.html">SVG Animation</a></li>
+                            <li><a target="_blank" href="firstPersonShooter.html">Block Hunter</a></li>
+                            <li><a target="_blank" href="tictac4.html">Tic Tac 4</a></li>
+                            <li><a target="_blank" href="crossReference.html">Cross Reference</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul class="right hide-on-med-and-down">
+        <li><a href="#!">First Sidebar Link</a></li>
+        <li><a href="#!">Second Sidebar Link</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">First</a></li>
+            <li><a href="#!">Second</a></li>
+            <li><a href="#!">Third</a></li>
+            <li><a href="#!">Fourth</a></li>
         </ul>
-        <ul id="slide-out" class="side-nav">
-            <li><a href="#!">First Sidebar Link</a></li>
-            <li><a href="#!">Second Sidebar Link</a></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </nav>
+
+    <script src="scripts/ui/ui.js"></script>
 </body>
 </html>
