@@ -12,7 +12,8 @@ SimApp.controller('mainCtrl', function($scope){
 
 
     $scope.batch_nums=ids;
-    //$scope.filterBatch={};
+
+    $scope.filterBatch={};
     //$scope.togleBotFilter=function(){
     //    console.log("hello");
     //  if($scope.filterBatch.robot){
@@ -68,13 +69,14 @@ SimApp.controller('mainCtrl', function($scope){
 
                 _.each(keys, function (key) {//change structure
                     if (!isNaN(parseFloat(test[key]))) {
-                        data.push({Name: key, Value: parseFloat(test[key])})
+                        data.push({Name: key, Value: parseFloat(test[key])});
                     }
                 });
                 $scope["test" + batch][index] = data;
             })
         });
-    //}
+    //};
+
 
 
 

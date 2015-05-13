@@ -2,27 +2,24 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <link rel="stylesheet" src="css/famous.css">
-
-
-
-    <script src="scripts/templates/navLinks.js"></script>
-    <script type="text/javascript" src="scripts/vendor/famous/functionPrototypeBind.js"></script>
-    <script type="text/javascript" src="scripts/vendor/famous/classList.js"></script>
-    <script type="text/javascript" src="scripts/vendor/famous/requestAnimationFrame.js"></script>
-    <script src="scripts/vendor/famous/views/GridLayout.js"></script>
-    <!-- famous -->
-    <link rel="stylesheet" type="text/css" href="http://code.famo.us/famous/0.3/famous.css" />
-    <script type="text/javascript" src="scripts/vendor/famous/famous-global.min.js"></script>
-
-
-
-    <!--<script src="scripts/views/EmptyView.js"></script>-->
-    <!--<script src="scripts/views/AppView.js"></script>-->
-    <!--<script src="scripts/templates/famousNav.js"></script>-->
-    <script src="scripts/templates/index.js"></script>
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <meta name="viewport" conten="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
+
 <body>
+    <script src="scripts/vendor/jquery.js"></script>
+    <script src="scripts/vendor/materialize/materialize.min.js"></script>
+    <script src="scripts/ui/ui.js"></script>
+    <nav>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+        </ul>
+        <ul id="slide-out" class="side-nav">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </nav>
 </body>
 </html>
