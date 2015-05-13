@@ -7,7 +7,7 @@ var NavBar = React.createClass({
     render: function() {
         return (
 
-            <nav style={{backgroundColor:"#283593"}}>
+            <nav style={{backgroundColor:"#c62828"}}>
 
                 <ul id="slide-out" className="side-nav fixed">
                     <li><a href="#!">First Sidebar Link</a></li>
@@ -42,7 +42,7 @@ var NavBar = React.createClass({
                 <a href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
                 <div className="container" style={{width:"90%"}}>
                 <div className="nav-wrapper" style={{textAlign:"center", position:'relative'}}>
-                <a className="page-title">John Hooper</a>
+                <a className="page-title" style={{fontSize:'20pt'}}>Nissen-Hooper</a>
                     </div>
                     </div>
             </nav>
