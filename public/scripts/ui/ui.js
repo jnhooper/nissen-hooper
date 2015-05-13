@@ -3,4 +3,3 @@
  */
 $(".button-collapse").sideNav();
 $('.collapsible').collapsible();
-console.log("yolo");
