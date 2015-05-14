@@ -6,9 +6,7 @@
 var NavBar = React.createClass({
     render: function() {
         return (
-
             <nav style={{backgroundColor:"#c62828"}}>
-
                 <ul id="slide-out" className="side-nav fixed">
                     <li><a href="#!">First Sidebar Link</a></li>
                     <li><a href="#!">Second Sidebar Link</a></li>
@@ -50,7 +48,6 @@ var NavBar = React.createClass({
         );
     }
 });
-
 
 React.render(
 <NavBar/>,
