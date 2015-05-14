@@ -2,12 +2,28 @@
  * Created by John on 5/13/2015.
  */
 
+function detectmob() {
+    if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+var mobile = detectmob();
 
 var NavBar = React.createClass({
     render: function() {
         return (
             <nav style={{backgroundColor:"#c62828"}}>
-                <ul id="slide-out" className="side-nav">
+                <ul id="slide-out" className="side-nav fixed">
                     <li><a href="#!">First Sidebar Link</a></li>
                     <li><a href="#!">Second Sidebar Link</a></li>
                     <li className="no-padding">
@@ -26,17 +42,6 @@ var NavBar = React.createClass({
                         </ul>
                     </li>
                 </ul>
-                <ul className="right hide-on-med-and-down">
-                    <li><a href="#!">First Sidebar Link</a></li>
-                    <li><a href="#!">Second Sidebar Link</a></li>
-                    <li><a className="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i className="mdi-navigation-arrow-drop-down right"></i></a></li>
-                    <ul id='dropdown1' className='dropdown-content'>
-                        <li><a href="#!">First</a></li>
-                        <li><a href="#!">Second</a></li>
-                        <li><a href="#!">Third</a></li>
-                        <li><a href="#!">Fourth</a></li>
-                    </ul>
-                </ul>
                 <a href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
                 <div className="container" style={{width:"90%"}}>
                 <div className="nav-wrapper" style={{textAlign:"center", position:'relative'}}>
@@ -49,6 +54,18 @@ var NavBar = React.createClass({
     }
 });
 
+var paddit=function(){
+    if(!mobile){
+        console.log("hey hey");
+        $('body').css("padding-left",'240px');
+    }
+    console.log($(window).width());
+    if($(window).width()<=800){
+
+        $('body').css("padding-left",'0px');
+    }
+};
+
 React.render(
 <NavBar/>,
     document.getElementById('nav'),
@@ -57,6 +74,11 @@ React.render(
             backgroundColor:"indigo darken-3"
         });
         $('.collapsible').collapsible();
+        paddit();
     }
 );
 
+$(window).resize(function(){
+    console.log("resized");
+    paddit();
+});
