@@ -17,7 +17,7 @@ var Paralax = React.createClass({
                 </div>
             </div>
             <div className="parallax-container">
-                <div className="parallax"><img src="http://a0.web.wt-cdn.com/post_items/images/000/023/980/large_gif/dude.gif"/></div>
+                <div className="parallax"><img src="https://tippinthescales.files.wordpress.com/2012/01/funny-dog-pictures-goggie-gif-click-type-click-type.gif?w=500"/></div>
             </div>
             </div>
         );
