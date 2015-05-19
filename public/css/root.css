@@ -1,0 +1,29 @@
+.napp-color{
+    background-color: #c62828;
+}
+.waves-effect.waves-napp .waves-ripple{
+    background-color: #c62828;
+}
+
+/*from bootstrap css*/
+.bg-success{
+    background-color: #dff0d8;
+}
+.table-bordered{
+    border: 1px solid #ddd !important;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+    border: 1px solid #ddd;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+}
+.table{
+    white-space: nowrap;
+}

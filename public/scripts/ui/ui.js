@@ -22,20 +22,21 @@ var mobile = detectmob();
 var NavBar = React.createClass({
     render: function() {
         return (
-            <nav style={{backgroundColor:"#c62828"}}>
+            <nav className="napp-color">
                 <ul id="slide-out" className="side-nav fixed">
-                    <li><a href="#!">First Sidebar Link</a></li>
-                    <li><a href="#!">Second Sidebar Link</a></li>
+                    <li><a className="waves-effect waves-napp" href="#!">First Sidebar Link</a></li>
+                    <li><a className="waves-effect waves-napp" href="#!">Second Sidebar Link</a></li>
                     <li className="no-padding">
                         <ul className="collapsible collapsible-accordion">
                             <li>
-                                <a className="collapsible-header">Examples<i className="mdi-navigation-arrow-drop-down"></i></a>
+                                <a className="waves-effect waves-napp collapsible-header">Examples<i className="mdi-navigation-arrow-drop-down"></i></a>
                                 <div className="collapsible-body">
                                     <ul>
-                                    <li><a target="_blank" href="customStar.html">SVG Animation</a></li>
-                                    <li><a target="_blank" href="firstPersonShooter.html">Block Hunter</a></li>
-                                    <li><a target="_blank" href="tictac4.html">Tic Tac 4</a></li>
-                                    <li><a target="_blank" href="crossReference.html">Cross Reference</a></li>
+                                        <li><a className="waves-effect waves-napp" target="_blank" href="customStar.html">SVG Animation</a></li>
+                                        <li><a className="waves-effect waves-napp" target="_blank" href="firstPersonShooter.html">Block Hunter</a></li>
+                                        <li><a className="waves-effect waves-napp" target="_blank" href="tictac4.html">Tic Tac 4</a></li>
+                                        <li><a className="waves-effect waves-napp" target="_blank" href="crossReference.html">Cross Reference</a></li>
+                                        //<li><a className="waves-effect waves-napp" target="_blank" href="ngSim.html">SVG Graphing</a></li>
                                     </ul>
                                 </div>
                             </li>

@@ -4,31 +4,24 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/root.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <script src="scripts/vendor/react/react.js"></script>
+    <script src="scripts/vendor/react/JSXTransformer.js"></script>
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/vendor/underscore.js"></script>
+    <script src="scripts/vendor/materialize/materialize.min.js"></script>
+
+
     <script src="scripts/vendor/three.min.js"></script>
-    <script src="scripts/vendor/handlebars-v3.0.0.js"></script>
-    <script src="scripts/templates/nav.js"></script>
-    <script id="navbar" type="x-handlebars-template">
-        <div class="navbar navbar-default">
-            <ul class="nav navbar-nav">
-                {{#each this}}
-                {{~#if mobileFriendly}}
-                <li class="active">
-                    <a href={{address}}>{{name}}</a>
-                </li>
-                {{/if}}
-                {{/each}}
-            </ul>
-        </div>
-        {{~#if mobile}}
-        <h4 class="small">For more examples please come back on a non mobile device</h4>
-        {{/if}}
-    </script>
+
 </head>
 <body>
-<div  id="nav">
-</div>
+<div id="nav"></div>
+<script type="text/jsx" src="scripts/ui/ui.js"></script>
 <br>
 <div id="blocker">
     <div id="instructions" style="">
