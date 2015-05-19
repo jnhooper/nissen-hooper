@@ -56,12 +56,10 @@ var NavBar = React.createClass({
 
 var paddit=function(){
     if(!mobile){
-        console.log("hey hey");
         $('body').css("padding-left",'240px');
     }
     console.log($(window).width());
     if($(window).width()<=800){
-
         $('body').css("padding-left",'0px');
     }
 };
@@ -70,10 +68,10 @@ React.render(
 <NavBar/>,
     document.getElementById('nav'),
     function(){
-        $(".button-collapse").sideNav({
+        $("nav .button-collapse").sideNav({
             backgroundColor:"indigo darken-3"
         });
-        $('.collapsible').collapsible();
+        $('nav .collapsible').collapsible();
         paddit();
     }
 );
