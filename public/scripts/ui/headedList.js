@@ -1,7 +1,7 @@
 var BulletPoint = React.createClass({
     render:function(){
         return(
-            <li className="flow-text">- {this.props.content}</li>
+            <li className="flow-text">&#8226; {this.props.content}</li>
         )
     }
 });
