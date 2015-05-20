@@ -3,7 +3,6 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="css/bootstrap.css">
 
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
     <link type="text/css" rel="stylesheet" href="css/root.css"/>
@@ -23,22 +22,27 @@
 <div id="nav"></div>
 <script type="text/jsx" src="scripts/ui/ui.js"></script>
 <br>
-<div id="blocker">
-    <div id="instructions" style="">
-        warning: May not work depending on your browser.
+<div id="blocker" class="container">
+    <form action="#">
+        <input id="bounce" type="checkbox" value="bounce">
+        <label for="bounce">bouncing boxes</label>
+        </br>
+        <input id="spin"  type="checkbox" value="spin">
+        <label for="spin">spin boxes</label>
         <br>
-        <span style="font-size:40px; cursor:pointer;">Click HERE to play</span>
-        <br/>
-        (W, A, S, D = Move, SPACE = Jump, MOUSE = Look around, ESC = Exit)
-        </div>
-    </br>
-    <input id="bounce" type="checkbox" value="bounce">bouncing boxes
-    </br>
-    <input id="spin" type="checkbox" value="spin">spin boxes
-    <br>
-    <input id="duckhunter" type="checkbox" value="bounce">duck hunter style
-    </br>
+        <input id="duckhunter" type="checkbox" value="bounce">
+        <label for="duckhunter">duck hunter style</label>
+        </br>
+    </form>
+    <div class="instruction_wrapper">
+        <h3 id="instructions" style="cursor:pointer;">Click HERE to play</h3>
+        <p class="text-flow"><b>(W, A, S, D = Move, SPACE = Jump, MOUSE = Look around, ESC = Exit)</b></p>
+        <h6 class="text-flow"><em>warning: Limited functionality depending on browser</em></h6>
     </div>
+    <div class="mobile_instructions">
+        <p>To interact more please come back when you're not on a mobile device!</p>
+    </div>
+</div>
 
 
 

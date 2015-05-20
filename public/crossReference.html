@@ -3,32 +3,29 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-<script src="scripts/vendor/jquery.js"></script>
-<script src="scripts/vendor/underscore.js"></script>
-<script src="scripts/vendor/Backbone.js"></script>
-<script src="scripts/crossReference/Olga.js"></script>
-<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-<script src="scripts/vendor/handlebars-v3.0.0.js"></script>
-<script src="scripts/templates/nav.js"></script>
-<link rel="stylesheet" type="text/css" href="css/olgaScript.css">
-    <script id="navbar" type="x-handlebars-template">
-        <div class="navbar navbar-default">
-            <ul class="nav navbar-nav">
-                {{#each this}}
-                {{~#if mobileFriendly}}
-                <li class="active">
-                    <a href={{address}}>{{name}}</a>
-                </li>
-                {{/if}}
-                {{/each}}
-            </ul>
-        </div>
-        {{~#if mobile}}
-        <h4 class="small">For more examples please come back on a non mobile device</h4>
-        {{/if}}
-    </script>
 
-<script type="text/tempate" id="masterCollection">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/root.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <script src="scripts/vendor/react/react.js"></script>
+    <script src="scripts/vendor/react/JSXTransformer.js"></script>
+    <script src="scripts/vendor/jquery.js"></script>
+    <script src="scripts/vendor/underscore.js"></script>
+    <script src="scripts/vendor/materialize/materialize.min.js"></script>
+
+
+    <!--<script src="scripts/vendor/jquery.js"></script>-->
+    <!--<script src="scripts/vendor/underscore.js"></script>-->
+    <script src="scripts/vendor/Backbone.js"></script>
+    <script src="scripts/crossReference/Olga.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
+    <!--<script src="scripts/vendor/handlebars-v3.0.0.js"></script>-->
+    <!--<script src="scripts/templates/nav.js"></script>-->
+    <link rel="stylesheet" type="text/css" href="css/olgaScript.css">
+
+
+    <script type="text/template" id="masterCollection">
 	<table class="table table-striped <%= classy %>">
 	<tr>
 	<% for(var i=0; i<ids.length; i++){ %>
@@ -36,41 +33,44 @@
 		<% } %>
 	</tr>
 	</table>
-</script>
-<script type="text/tempate" id="BookTemp">
+
+    </script>
+    <script type="text/tempate" id="BookTemp">
 	<tr>
 	<% for(var i=0; i<ids.length; i++){ %>
 		<td><%= model[ids[i]] %></td>
 		<% } %>
 	</tr>
-</script>
+
+    </script>
 </head>
 <body>
-<div id="nav">
-</div>
+<div id="nav"></div>
+<script type="text/jsx" src="scripts/ui/ui.js"></script>
+
 <div class='Forms'>
-    <div class="form-group">
+    <div class="form-group input-field">
         <label for="textA">Small List</label>
-        <textarea class="form-control" id="textA"></textarea>
+        <textarea class="form-control materialize-textarea" id="textA"></textarea>
     </div>
 
-    <div class="form-group">
-        <label for="key">Key for small list: </label>
+    <div class="form-group input-field">
+        <label for="keyA">Key for small list: </label>
         <input class="form-control" type="text" id="keyA">
     </div>
 
-    <div class="form-group">
+    <div class="form-group input-field">
         <label for="textB">Master List</label>
-        <textarea class="form-control" id="textB"></textarea>
+        <textarea class="form-control materialize-textarea" id="textB"></textarea>
     </div>
 
-    <div class="form-group">
+    <div class="form-group input-field">
         <label for="keyB">Key for Master list: </label>
         <input class="form-control" type="text" id="keyB">
     </div>
 
     <br>
-    <button class="btn btn-info">Cross Reference</button>
+    <button class="btn waves-effect-light btn-info"> Cross Reference <i class="mdi-action-assignment"></i></button>
 </div>
 <div class="data"></div>
 

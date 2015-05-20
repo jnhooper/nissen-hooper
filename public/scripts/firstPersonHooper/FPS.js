@@ -1,3 +1,24 @@
+function detectmob() {
+    if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+if(detectmob()){
+    $('.instruction_wrapper').css({display:"none"});
+    $('.mobile_instructions').css({display:""});
+}else{
+    $('.mobile_instructions').css({display:"none"});
+}
 (function(THREE) {
     //$('body').prepend(
     //    '<div id="blocker" style="display: -webkit-box;">'+
@@ -30,9 +51,15 @@
     var bounceBoxes = false;
     var spinBoxes = false;
     var duckHunter = false;
-    $('input#bounce').click(function(event){bounceBoxes = event.target.checked});
-    $('input#spin').click(function(event){spinBoxes = event.target.checked});
-    $('input#duckhunter').click(function(event){duckHunter = event.target.checked});
+    $('#bounce').click(function(event){
+            bounceBoxes = event.target.checked}
+    );
+    $('#spin').click(function(event){
+        spinBoxes = event.target.checked}
+    );
+    $('#duckhunter').click(function(event){
+        duckHunter = event.target.checked}
+    );
 
 
 // http://www.html5rocks.com/en/tutorials/pointerlock/intro/
@@ -55,9 +82,9 @@
 
                 controls.enabled = false;
                 inGame = false;
-                blocker.style.display = '-webkit-box';
-                blocker.style.display = '-moz-box';
-                blocker.style.display = 'box';
+                blocker.style.display = ""//'-webkit-box';
+                blocker.style.display = ""//'-moz-box';
+                blocker.style.display = ""//'box';
 
                 instructions.style.display = '';
 

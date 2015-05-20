@@ -32,11 +32,10 @@ var NavBar = React.createClass({
                                 <a className="waves-effect waves-napp collapsible-header">Examples<i className="mdi-navigation-arrow-drop-down"></i></a>
                                 <div className="collapsible-body">
                                     <ul>
-                                        <li><a className="waves-effect waves-napp" target="_blank" href="customStar.html">SVG Animation</a></li>
-                                        <li><a className="waves-effect waves-napp" target="_blank" href="firstPersonShooter.html">Block Hunter</a></li>
-                                        <li><a className="waves-effect waves-napp" target="_blank" href="tictac4.html">Tic Tac 4</a></li>
-                                        <li><a className="waves-effect waves-napp" target="_blank" href="crossReference.html">Cross Reference</a></li>
-                                        //<li><a className="waves-effect waves-napp" target="_blank" href="ngSim.html">SVG Graphing</a></li>
+                                        <li><a className="waves-effect waves-napp"  href="customStar.html">SVG Animation</a></li>
+                                        <li><a className="waves-effect waves-napp"  href="firstPersonShooter.html">Block Hunter</a></li>
+                                        <li><a className="waves-effect waves-napp"  href="tictac4.html">Tic Tac 4</a></li>
+                                        <li><a className="waves-effect waves-napp"  href="crossReference.html">Cross Reference</a></li>
                                     </ul>
                                 </div>
                             </li>
