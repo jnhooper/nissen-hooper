@@ -10,7 +10,7 @@ var parallaxData=[
                 secondLine:"Front End Engineer for Open Kim Project",
                 dates:"2014-Current",
                 points:[
-                    "Main Front End Engineer for OpenKIM, an online suite of open source tools for molecular simulation" +
+                    'Main Front End Engineer for <a href="https://openkim.org/">OpenKIM</a>, an online suite of open source tools for molecular simulation' +
                     " of materials. These tools help to make molecular simulation more accessible and more reliable.",
                     "Worked with large existing codebase to improve usability and flexability",
                     "Created a web app for visualizing tests",
@@ -112,7 +112,7 @@ var parallaxData=[
                 key:"creative",
                 firstLine:"Creative",
                 points:[
-                    "Created  promotional video for study abroad program which helped to dramatically increase enrollment",
+                    "Created  <a href='https://www.youtube.com/watch?v=pbk1OAukFig'>promotional video</a> for study abroad program which helped to dramatically increase enrollment",
                     "Freelance photographer for University magazine",
                     "Avid Photographer and Web Designer"
                 ]

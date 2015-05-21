@@ -1,7 +1,9 @@
 var BulletPoint = React.createClass({
     render:function(){
+        var self = this
+        function createMarkup() { return {__html: self.props.content}; };
         return(
-            <li className="flow-text">&#8226; {this.props.content}</li>
+            <li>&#8226; <span className="flow-text" dangerouslySetInnerHTML={createMarkup()}></span></li>
         )
     }
 });

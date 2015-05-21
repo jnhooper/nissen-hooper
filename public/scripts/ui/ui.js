@@ -22,8 +22,8 @@ var mobile = detectmob();
 var NavBar = React.createClass({
     render: function() {
         return (
-            <nav className="napp-color">
-                <ul id="slide-out" className="side-nav fixed">
+            <nav style={{position:"fixed", zIndex:998}} className="napp-color z-depth-3">
+                <ul  id="slide-out" className="side-nav fixed scroll-with">
                     <li><a className="waves-effect waves-napp" href="#!">First Sidebar Link</a></li>
                     <li><a className="waves-effect waves-napp" href="#!">Second Sidebar Link</a></li>
                     <li className="no-padding">
@@ -42,10 +42,10 @@ var NavBar = React.createClass({
                         </ul>
                     </li>
                 </ul>
-                <a href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
+                <a href="#" id="hamburger" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
                 <div className="container" style={{width:"90%"}}>
-                <div className="nav-wrapper" style={{textAlign:"center", position:'relative'}}>
-                <a className="page-title" style={{fontSize:'20pt'}}>Nissen-Hooper</a>
+                <div className="nav-wrapper" style={{textAlign:"center", position:'relative', zIndex:100}}>
+                <a className="page-title"  style={{fontSize:'20pt'}}>Nissen-Hooper</a>
                     </div>
                     </div>
             </nav>
@@ -72,6 +72,29 @@ React.render(
             backgroundColor:"indigo darken-3"
         });
         $('nav .collapsible').collapsible();
+
+        var fuckinShadow=function(){
+            if($('nav #sidenav-overlay').length==0) {
+                $('#sidenav-overlay').remove();
+                $('nav.napp-color').append('<div id="sidenav-overlay" style="opacity: 0;"></div>');
+            }
+        };
+
+        $('.drag-target').on('click',function(){
+          fuckinShadow();
+        });
+        $('.drag-target').on('pan',function(){
+            fuckinShadow();
+        });
+        $('nav #hamburger').on("click",function(){
+            $('#sidenav-overlay').remove();
+            $('nav.napp-color').append('<div id="sidenav-overlay"></div>');
+        });
+
+
+
+
+
         paddit();
     }
 );

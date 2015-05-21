@@ -1979,6 +1979,7 @@ $(document).ready(function(){
               overlay.css('opacity', 0).click( function(){
                 removeMenu();
               });
+
               $('body').append(overlay);
             }
 
