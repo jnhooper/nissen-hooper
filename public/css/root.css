@@ -5,6 +5,18 @@
     background-color: #c62828;
 }
 
+ul.bullets{
+    list-style-type: disc !important;
+}
+ul.bullets li{
+    list-style-type: disc !important;
+    padding-left:10px;
+}
+ul.bullets div{
+    display:inline-block;
+    padding-left:10px;
+}
+
 .fake-sidenav-overlay{
     background-color:rgba(0, 0, 0, 0.498039);
     position: fixed;

@@ -1,9 +1,10 @@
 var BulletPoint = React.createClass({
     render:function(){
         var self = this
+        //&#8226;
         function createMarkup() { return {__html: self.props.content}; };
         return(
-            <li>&#8226; <span className="flow-text" dangerouslySetInnerHTML={createMarkup()}></span></li>
+            <li><div style={{display:"inline-grid"}}>&#8226;</div><div style={{display:"inline-grid"}} className="flow-text" dangerouslySetInnerHTML={createMarkup()}></div></li>
         )
     }
 });
@@ -24,7 +25,7 @@ var HeadedList = React.createClass({
                     <h6>{this.props.dates}</h6>
                 </div>
                 <div className="collapsible-body">
-                    <ul>{points}</ul>
+                    <ul className="bullets">{points}</ul>
                 </div>
             </li>
         )
