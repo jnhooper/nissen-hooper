@@ -4,7 +4,7 @@ var BulletPoint = React.createClass({
         //&#8226;
         function createMarkup() { return {__html: self.props.content}; };
         return(
-            <li><div style={{display:"inline-grid"}}>&#8226;</div><div style={{display:"inline-grid"}} className="flow-text" dangerouslySetInnerHTML={createMarkup()}></div></li>
+            <li><div style={{paddingLeft:"0px"}}>&#8226;</div><span> </span><span className="flow-text" dangerouslySetInnerHTML={createMarkup()}></span></li>
         )
     }
 });

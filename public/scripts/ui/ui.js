@@ -57,11 +57,12 @@ var NavBar = React.createClass({
 var paddit=function(){
     if(!mobile){
         $('body').css("padding-left",'240px');
+        console.log("NOT MOBILE");
     }
     console.log($(window).width());
-    if($(window).width()<=800){
-        $('body').css("padding-left",'0px');
-    }
+    //if($(window).width()<=800){
+    //    $('body').css("padding-left",'0px');
+    //}
 };
 
 React.render(
