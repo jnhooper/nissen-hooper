@@ -55,11 +55,18 @@ var NavBar = React.createClass({
 });
 
 var paddit=function(){
-    if(!mobile){
+    if(!mobile && $("#nav nav ul").position().left>=0){
         $('body').css("padding-left",'240px');
-        console.log("NOT MOBILE");
+        $('a.page-title').css("margin-left","-200px");
+        //console.log("NOT MOBILE");
+        //console.log($("#nav nav ul").position().left);
     }
-    console.log($(window).width());
+    else{
+        $('body').css("padding-left",'0px');
+        $('a.page-title').css("margin-left","0px");
+    }
+    //console.log($("#nav nav ul").position().left);
+    //console.log($(window).width());
     //if($(window).width()<=800){
     //    $('body').css("padding-left",'0px');
     //}
