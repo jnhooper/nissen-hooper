@@ -434,8 +434,9 @@ window.onload = function() {
     //console.log(camera)
     function render() {
         requestAnimationFrame(render);
-        renderer.render(scene, camera);
         updateControls();
+        renderer.render(scene, camera);
+
 
 //    camera.rotation.y +=.03
 //    cube.rotation.z+=.04;
