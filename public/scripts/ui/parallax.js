@@ -8,7 +8,7 @@ var CardList = React.createClass({
         return(
             <div className="CardList">
                 <div className="parallax-container" style={{height:'400px'}}>
-                    <div className="parallax"><img height="500px" src={this.props.imageSrc}/></div>
+                    <div className="parallax"><img src={this.props.imageSrc}/></div>
                 </div>
                 <div className="section white z-depth-5">
                     <div className="row container">
