@@ -14,15 +14,19 @@
     <script src="scripts/vendor/underscore.js"></script>
     <script src="scripts/vendor/materialize/materialize.min.js"></script>
 
+    <script type="text/jsx" src="scripts/ui/collapsible-list.js"></script>
 
     <script src="scripts/vendor/three.min.js"></script>
 
 </head>
 <body>
 <div id="nav"></div>
-<script type="text/jsx" src="scripts/ui/ui.js"></script>
-<br>
-<div id="blocker" class="container"  style="padding-top:69px">
+<div id="blocker"  style="padding-top:65px">
+    <div id="CollapsibleList"></div>
+
+    <script type="text/jsx" src="scripts/firstPersonHooper/firstPersonHooper.js"></script>
+    <script type="text/jsx" src="scripts/ui/ui.js"></script>
+    <div class="container">
     <form action="#">
         <input id="bounce" type="checkbox" value="bounce">
         <label for="bounce">bouncing boxes</label>
@@ -41,6 +45,7 @@
     </div>
     <div class="mobile_instructions">
         <p>To interact more please come back when you're not on a mobile device!</p>
+    </div>
     </div>
 </div>
 

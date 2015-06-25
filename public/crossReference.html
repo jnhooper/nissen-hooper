@@ -10,6 +10,9 @@
 
     <script src="scripts/vendor/react/react.js"></script>
     <script src="scripts/vendor/react/JSXTransformer.js"></script>
+
+    <script type="text/jsx" src="scripts/ui/collapsible-list.js"></script>
+
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/vendor/underscore.js"></script>
     <script src="scripts/vendor/materialize/materialize.min.js"></script>
@@ -19,6 +22,7 @@
     <!--<script src="scripts/vendor/underscore.js"></script>-->
     <script src="scripts/vendor/Backbone.js"></script>
     <script src="scripts/crossReference/Olga.js"></script>
+
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap.css">-->
     <!--<script src="scripts/vendor/handlebars-v3.0.0.js"></script>-->
     <!--<script src="scripts/templates/nav.js"></script>-->
@@ -44,28 +48,35 @@
 
     </script>
 </head>
+
 <body>
+
 <div id="nav"></div>
 <script type="text/jsx" src="scripts/ui/ui.js"></script>
 
-<div style="padding-top:65px"class='Forms'>
+<div style="padding-top:65px" id="CollapsibleList"></div>
+<script type="text/jsx" src="scripts/crossReference/crossReference.js"></script>
+
+
+
+<div style="padding-top:65px" class='Forms'>
     <div class="form-group input-field">
-        <label for="textA">Small List</label>
+        <label for="textA">Lookup List</label>
         <textarea class="form-control materialize-textarea" id="textA"></textarea>
     </div>
 
     <div class="form-group input-field">
-        <label for="keyA">Key for small list: </label>
+        <label for="keyA">Key for Lookup list: </label>
         <input class="form-control" type="text" id="keyA">
     </div>
 
     <div class="form-group input-field">
-        <label for="textB">Master List</label>
+        <label for="textB">Raw List</label>
         <textarea class="form-control materialize-textarea" id="textB"></textarea>
     </div>
 
     <div class="form-group input-field">
-        <label for="keyB">Key for Master list: </label>
+        <label for="keyB">Key for Raw list: </label>
         <input class="form-control" type="text" id="keyB">
     </div>
 

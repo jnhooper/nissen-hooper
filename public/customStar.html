@@ -12,17 +12,42 @@
     <script src="scripts/vendor/jquery.js"></script>
     <script src="scripts/vendor/underscore.js"></script>
     <script src="scripts/vendor/materialize/materialize.min.js"></script>
-    <script type="text/javascript" src="scripts/customStar/customStar.js"></script>
+    <script type="text/javascript" src="scripts/customStar/createStar.js"></script>
+
+    <script type="text/jsx" src="scripts/ui/collapsible-list.js"></script>
 
 </head>
 <body style="width:100%;height:100%;">
 <div id="nav"></div>
 <script type="text/jsx" src="scripts/ui/ui.js"></script>
-
+<div style="padding-top:65px">
+    <div id="CollapsibleList"></div>
+    <script type="text/jsx" src="scripts/customStar/customStar.js"></script>
+    <div class="container">
+        <form action="#">
+            <p>
+                <input class="redraw" name="group1" type="radio" id="straightLine" />
+                <label for="straightLine">Straight Lines</label>
+            </p>
+            <p>
+                <input class="redraw" name="group1" type="radio" id="curveLine" />
+                <label for="curveLine">Curved Lines</label>
+            </p>
+        </form>
+    <!--<input type="radio" value="straight" name="lineType">Straight Lines<br>-->
+    <!--<input type="radio" value="curve" name="lineType"> Curved Lines-->
+    <input min="4" type="range" value="5" id="points" class="points redraw">
+        <label for="points"># of Points</label>
+    <input min="5" type="range" value="50" id="outer" class="outer redraw">
+        <label for="outer">Outer Radius</label>
+    <input min="5" type="range" value="25" id="inner" class="inner redraw">
+        <label for="inner">Inner Radius</label>
+    </div>
     <svg id="starCanvas"
          height="100%" width="100%" version="1.1"
          xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink">
          </svg>
+</div>
 </body>
 </html>
