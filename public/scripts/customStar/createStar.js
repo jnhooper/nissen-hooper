@@ -205,7 +205,7 @@ var redraw = function(outer, inner, points, type){
 //for cool things set the first number bigger than the second and set it to curve
 $(function() {
     //createStar(70, 50, 5, "curve");
-    createStar(50, 25, 5, "straight");
+    createStar(60, 30, 5, "straight");
     $(".redraw").on("input", function(e){
         var points = parseInt($(".points")[0].value);
         var outer = parseInt($(".outer")[0].value);

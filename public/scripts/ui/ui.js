@@ -41,6 +41,20 @@ var NavBar = React.createClass({
                             </li>
                         </ul>
                     </li>
+                    <li className="no-padding">
+                        <ul className="collapsible collapsible-accordion">
+                            <li>
+                                <a className="waves-effect waves-napp collapsible-header">Contact<i className="mdi-navigation-arrow-drop-down"></i></a>
+                                <div className="collapsible-body">
+                                    <ul>
+                                        <li><a href="tel:+6127411838"><i class="small mdi-communication-phone"></i>(612) 741-1838 </a></li>
+                                        <li><a href="mailto:john.nissenhooper@gmail.com"><i class="small mdi-content-mail"></i>john.nissenhooper@gmail</a></li>
+                                        <li><a href="http://www.linkedin.com/in/nissenhooper"><i class="small mdi-action-account-child"></i>LinkedIn</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
                 <a href="#" id="hamburger" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
                 <div className="container" style={{width:"90%"}}>

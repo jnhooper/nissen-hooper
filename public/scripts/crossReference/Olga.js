@@ -153,7 +153,7 @@ $(function(){
 			 	keys:idsA,
 			 	classy:"missing"
 			});
-			$('.data').append("<br><h1>BOOKS MISSING <small>from the smaller list</small></h1>");
+			$('.data').append("<br><h5>ITEMS MISSING <small>from the lookup list</small></h5>");
 			notShownView.render();	
 		}
 

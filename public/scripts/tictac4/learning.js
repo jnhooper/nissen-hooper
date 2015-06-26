@@ -263,6 +263,7 @@ window.onload = function() {
         var hits = ray.intersectObjects(pos);
 
         if (mouse.clicked) {
+            //console.log(pos);
             if (gameWON) {
                 resetGame();
                 gameWON = false;
@@ -298,15 +299,38 @@ window.onload = function() {
         }
     }
 
-
+    var navPadding=0;
+    var aboutPadding=0;
+    var aboutHeight=0;
     function onDocumentMouseMove(event) {
-        mouse.x = (event.clientX / renderWIDTH) * 2 - 1;
-        mouse.y = -(event.clientY / renderHEIGHT) * 2 + 1;
+        var offsetx = 0;
+        navPadding=$("body").css('padding-left');
+        if(navPadding){
+            navPadding = parseInt(navPadding.substring(0, navPadding.length - 2));
+            offsetx -= navPadding;
+        }
+
+        aboutPadding=$(".belowNav").css('padding-top');
+        aboutHeight=$(".belowNav").height();
+        var offsety=0;
+        if(aboutPadding){
+            aboutPadding = parseInt(aboutPadding.substring(0, aboutPadding.length - 2));
+
+            offsety -= aboutPadding+aboutHeight+12;
+        }
+        mouse.x = ((event.clientX + offsetx) / renderWIDTH) * 2 - 1;
+        mouse.y = -((event.clientY + offsety) / renderHEIGHT) * 2 + 1;
     }
 
     function onDocumentMouseDown(event) {
-        mouse.x = ( event.clientX / renderWIDTH ) * 2 - 1;
-        mouse.y = -( event.clientY / renderHEIGHT ) * 2 + 1;
+        var offsetx=0;
+        offsetx-=navPadding;
+
+        var offsety= -1*(aboutPadding+aboutHeight+12);
+
+
+        mouse.x = ( (event.clientX + offsetx) / renderWIDTH ) * 2 - 1;
+        mouse.y = -( (event.clientY + offsety) / renderHEIGHT ) * 2 + 1;
         mouse.clicked = true;
 
     }

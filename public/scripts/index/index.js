@@ -4,7 +4,12 @@ var aboutMe=[
     {
         title:"About Me",
         key:"About_me",
-        paragraph:"I did some stuff and now I'm here",
+        paragraph:"I am a front end developer living in Minneapolis. I graduated in 2012 with Summa Cum Laude honors from " +
+        "The University of Minnesota. I am largely self-taught in computer programming and have been working as an independent" +
+        " contractor for two years. Javascript is my first love, however I can also program in several other languages. " +
+        "<br>" +
+        "Besides programming languages I am also fluent in Italian, and have lived and worked on three different continents." +
+        " ",
         //imageSrc:"http://pre05.deviantart.net/1bdf/th/pre/f/2010/321/b/4/fall_hike_by_nisse038-d331xop.jpg",
         //imageSrc:"http://i.imgur.com/nrNlJAz.jpg",
         imageSrc:"http://pre05.deviantart.net/1bdf/th/pre/f/2010/321/b/4/fall_hike_by_nisse038-d331xop.jpg",

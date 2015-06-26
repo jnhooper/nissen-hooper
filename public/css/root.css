@@ -16,10 +16,23 @@ ul.bullets div{
     display:inline-block;
     padding-left:10px;
 }
+table .noPadding{
+    padding-top:0 !important;
+    padding-bottom:0 !important;
 
+}
 .parallax img{
     /*max-width:1500px;*/
     /*height:auto;*/
+}
+
+.belowNav{
+    padding-top:56px;
+}
+.noScroll{
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .fake-sidenav-overlay{

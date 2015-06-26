@@ -30,10 +30,10 @@
 
 
     <script type="text/template" id="masterCollection">
-	<table class="table table-striped <%= classy %>">
+	<table class="table striped table-striped <%= classy %>">
 	<tr>
 	<% for(var i=0; i<ids.length; i++){ %>
-		<th><%= ids[i] %></th>
+		<th class="left-align"><%= ids[i] %></th>
 		<% } %>
 	</tr>
 	</table>
@@ -42,7 +42,7 @@
     <script type="text/tempate" id="BookTemp">
 	<tr>
 	<% for(var i=0; i<ids.length; i++){ %>
-		<td><%= model[ids[i]] %></td>
+		<td class="noPadding left-align"><%= model[ids[i]] %></td>
 		<% } %>
 	</tr>
 
@@ -54,12 +54,12 @@
 <div id="nav"></div>
 <script type="text/jsx" src="scripts/ui/ui.js"></script>
 
-<div style="padding-top:65px" id="CollapsibleList"></div>
+<div class="belowNav" id="CollapsibleList"></div>
 <script type="text/jsx" src="scripts/crossReference/crossReference.js"></script>
 
 
 
-<div style="padding-top:65px" class='Forms'>
+<div class='Forms'>
     <div class="form-group input-field">
         <label for="textA">Lookup List</label>
         <textarea class="form-control materialize-textarea" id="textA"></textarea>
@@ -69,7 +69,7 @@
         <label for="keyA">Key for Lookup list: </label>
         <input class="form-control" type="text" id="keyA">
     </div>
-
+    <br>
     <div class="form-group input-field">
         <label for="textB">Raw List</label>
         <textarea class="form-control materialize-textarea" id="textB"></textarea>
@@ -83,6 +83,7 @@
     <br>
     <button class="btn waves-effect-light btn-info"> Cross Reference <i class="mdi-action-assignment"></i></button>
 </div>
+<br>
 <div class="data"></div>
 
 </body>
