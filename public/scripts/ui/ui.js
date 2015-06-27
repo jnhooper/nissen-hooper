@@ -59,7 +59,7 @@ var NavBar = React.createClass({
                 <a href="#" id="hamburger" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
                 <div className="container" style={{width:"90%"}}>
                 <div className="nav-wrapper" style={{textAlign:"center", position:'relative', zIndex:100}}>
-                <a className="page-title"  style={{fontSize:'20pt'}}>Nissen-Hooper</a>
+                <a className="page-title"  href="index.html" style={{fontSize:'20pt'}}>Nissen-Hooper</a>
                     </div>
                     </div>
             </nav>
