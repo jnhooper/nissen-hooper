@@ -2,6 +2,10 @@ Rails.application.routes.draw do
   root 'pages#index'
   get '/index'=> 'pages#index'
 
+  # root :controller => 'static', :action => '/'
+# end
+#   redirect_to root_path
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -24,8 +24,8 @@ var NavBar = React.createClass({
         return (
             <nav style={{position:"fixed", zIndex:998}} className="napp-color z-depth-3">
                 <ul  id="slide-out" className="side-nav fixed scroll-with">
-                    <li><a className="waves-effect waves-napp" href="test.html">About Me</a></li>
-                    <li><a className="waves-effect waves-napp" href="resume.html">Resume</a></li>
+                    <li><a className="waves-effect waves-napp" href="index.html">Resume</a></li>
+                    <li><a className="waves-effect waves-napp" href="about.html">About Me</a></li>
                     <li className="no-padding">
                         <ul className="collapsible collapsible-accordion">
                             <li>
