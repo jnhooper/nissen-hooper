@@ -4,6 +4,10 @@ var parallaxData=[
         title:"Work Experience",
         key:"Work_exp",
         imageSrc:"http://s3.amazonaws.com/edcanvas-uploads/199453/dropbox/1388699059/coding.jpg",
+        imageAlt:"work experience, resume, John, Imagine Print Solutions, javascript, coding, developer, front-end, " +
+        "frontend, frontend engineer, front end engineer, front-end, engineer, job, hire, programmer, javascript, " +
+        "developer, nissenhooper, nissen-hooper," +
+        "nissen hooper",
         html:[
             {
                 key:"Umn_work",
@@ -58,6 +62,8 @@ var parallaxData=[
         title:"Skills & Strengths",
         key:"skills",
         imageSrc:"http://th04.deviantart.net/fs70/PRE/f/2010/251/1/a/doggin_it_by_nisse038-d2ya8d9.jpg",
+        imageAlt:"sailing, skills and strengths, resume, hire, programmer, javascript, developer, nissenhooper, nissen-hooper," +
+        "nissen hooper",
         html:[
             {
                 key: "programming languages",
@@ -133,6 +139,8 @@ var parallaxData=[
         title:"Education",
         key:"Education",
         imageSrc:"http://www.chem.umn.edu/groups/gagliardi/pics/Gop1.jpg",
+        imageAlt:"University of Minnesota, Summa Cum Laude, hire, programmer, javascript, developer, nissenhooper, nissen-hooper," +
+        "nissen hooper",
         html:[{
             key:"university_of_mn",
             firstLine:"University of Minnesota",
