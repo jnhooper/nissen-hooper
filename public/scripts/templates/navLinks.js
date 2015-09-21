@@ -28,5 +28,6 @@ window.navLinks =[
     {name:"Tic-tac-4", address:"/tictac4.html", mobileFriendly:mobileDisplay(false)},
     {name:"SVG star", address:"/customStar.html", mobileFriendly:mobileDisplay(true)},
     {name:"Block Hunter", address:"/firstPersonShooter.html", mobileFriendly: mobileDisplay(true)},
-    {name:"Cross Reference", address:"/crossReference.html", mobileFriendly:mobileDisplay(true)}
+    {name:"Cross Reference", address:"/crossReference.html", mobileFriendly:mobileDisplay(true)},
+    {name:"Ng-Sim", address:"/ngSim.html", mobileFriendly:mobileDisplay(true)}
 ];

@@ -36,6 +36,7 @@ var NavBar = React.createClass({
                                         <li><a className="waves-effect waves-napp"  href="firstPersonShooter.html">Block Hunter</a></li>
                                         <li><a className="waves-effect waves-napp"  href="tictac4.html">Tic Tac 4</a></li>
                                         <li><a className="waves-effect waves-napp"  href="crossReference.html">Cross Reference</a></li>
+                                        <li><a className="waves-effect waves-napp"  href="ngSim.html">Ng-Sim</a></li>
                                     </ul>
                                 </div>
                             </li>

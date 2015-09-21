@@ -1,7 +1,7 @@
 
 var list=[{
     body:
-    "This in browser first person shooter is utilizing only Three.js. The User can walk around the auto-generated, random" +
+    "This in browser first person shooter is utilizing only Three.js. The User can walk around the auto-generated, random " +
     "environment using the WASD keys. If the blocks are stationary the user can even jump on top of them. Moving the mouse" +
     " will allow the player to look around their environment. Clicking the mouse will shoot a ball out and remain in place " +
     "once it hits a block. This will cause the block to change color. The ball follows a ray whose matrix is determined by the camera" +

@@ -15,9 +15,9 @@ var parallaxData=[
                 secondLine:"Front End Engineer for Open Kim Project",
                 dates:"2014-Current",
                 points:[
-                    'Main Front End Engineer for <a href="https://openkim.org/">OpenKIM</a>, an online suite of open source tools for molecular simulation' +
+                    'Front End Engineer for <a href="https://openkim.org/visualizer-wrapped/cohesive-energy-graph/?viz-height=760px&species=Cu&model=EAM_Dynamo_Onat_Durukanoglu_CuNi__MO_592013496703_001">OpenKIM</a>, an online suite of open source tools for molecular simulation' +
                     " of materials. These tools help to make molecular simulation more accessible and more reliable.",
-                    "Worked with large existing codebase to improve usability and flexability",
+                    "Worked with large existing codebase to improve usability and flexibility",
                     "Created a web app for visualizing tests",
                     "Created basic backbone framework to streamline the creation of visualizers",
                     "Participated in a workshop teaching students how to create their own visualizers using my framework"
