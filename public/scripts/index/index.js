@@ -142,9 +142,9 @@ var parallaxData=[
         imageAlt:"University of Minnesota, Summa Cum Laude, hire, programmer, javascript, developer, nissenhooper, nissen-hooper," +
         "nissen hooper",
         html:[{
-            key:"university_of_mn",
-            firstLine:"University of Minnesota",
-            secondLine:"Suma Cum Laude - CLA",
+            key:"university_of_mn_ba",
+            firstLine:"University of Minnesota - CLA",
+            secondLine:"Suma Cum Laude - BA",
             dates:"2012-2013",
             points:[
                 "Created and managed websites for local artist and charity",
@@ -153,6 +153,18 @@ var parallaxData=[
                 "Prepared an hour long lecture and workshop on Photography in Italian while living abroad",
                 "Interviewed Grammy Nominated band for local television station",
                 "Italian Tutor"
+            ]
+        },
+        {
+            key:"university_of_mn_bs",
+            firstLine:"University of Minnesota - CSE",
+            secondLine:"Bachelor's of Science",
+            dates:"2014-2016",
+            points:[
+                "Created and maintained a framework for visualizing data for the OpenKim Project",
+                "International Computer Programming Competition",
+                "Studies focused on web technologies",
+                "Created a grocery store simulator to gauge the benefit of hiring more bag boys"
             ]
         }]
     }
