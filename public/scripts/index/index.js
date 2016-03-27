@@ -65,27 +65,60 @@ var parallaxData=[
         imageAlt:"sailing, skills and strengths, resume, hire, programmer, javascript, developer, nissenhooper, nissen-hooper," +
         "nissen hooper",
         html:[
-            {
+             {
                 key: "programming languages",
                 firstLine:"Programming Languages",
                 points:[
                     "Javascript",
+                    // "Backbone.js",
+                    // "Angular.js",
+                    // "React.js",
+                    // "Jquery.js",
+                    // "underscore.js / lodash.js",
+                    // "D3.js",
+                    // "Ruby on Rails",
+                    "Ruby",
+                    // "Yeoman, Bower & Grunt",                    
+                    "Java",
+                    "Python",
+                    "C", 
+                    "C++",
+                    "Ocaml",
+                    "PHP",
+                    "SQL",
+                    "SVG",
+                    "JSON",
+                    "XML",
+                    "HTML5",
+                    "CSS3",
+                    "I even know some assembly, but please dont ask me to write any!"
+                ]
+            },
+            {
+                key: "programming libraries",
+                firstLine:"Libraries",
+                points:[
+                    // "Javascript",
                     "Backbone.js",
                     "Angular.js",
                     "React.js",
                     "Jquery.js",
                     "underscore.js / lodash.js",
                     "D3.js",
-                    "Ruby on Rails",
+                    "C3.js",
+                    "Three.js",
+                    // "Ruby on Rails",
+                    "Rails",
+                    "Vagrant",
                     "Yeoman, Bower & Grunt",
-                    "Ocaml",
-                    "Java",
-                    "Python",
-                    "C and C++",
-                    "SVG",
-                    "HTML5",
-                    "CSS3",
-                    "I even know some assembly, but please dont ask me to write any!"
+                    // "Ocaml",
+                    // "Java",
+                    // "Python",
+                    // "C and C++",
+                    // "SVG",
+                    // "HTML5",
+                    // "CSS3",
+                    // "I even know some assembly, but please dont ask me to write any!"
                 ]
             },
             {
@@ -95,6 +128,8 @@ var parallaxData=[
                     "Windows 8",
                     "Mac OsX",
                     "Ubuntu",
+                    "Virtual Box",
+                    "Source Tree",
                     "Photoshop",
                     "Illustrator",
                     "Gimp",
@@ -103,6 +138,7 @@ var parallaxData=[
                     "Garage Band",
                     "DreamWeaver",
                     "Google Apps",
+                    "Google Sketchup",
                     "Microsoft Office Suite",
                     "Quick study for anything and everything else"
                 ]

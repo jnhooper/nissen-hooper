@@ -28,13 +28,13 @@ var parallaxData=[
                 points:[
                     "Developed highly interactive store engine for franchise Owners to explore and edit " +
                     "online allowing them to visualize what their store would look like before odering POP",
-                    "Salvaged a failing project whose purpose was to create dynamic menus for Auntie Anne's Pretzels" +
+                    "Salvaged a failing project whose purpose was to create dynamic menus for Auntie Anne's Pretzels " +
                     "utilizing SVG technologies and Backbone.js",
                     "Worked with a team of two to create a Javascript framework for styling SVG content," +
-                    "which would be used for the second iteration of the Auntie Anne's project as well as" +
-                    "creating content for Famous Dave's Franchises",
+                    " which would be used for the second iteration of the Auntie Anne's project as well as" +
+                    " creating content for Famous Dave's Franchises",
                     "Designed and built an intranet employee database for Imagine, complete with internal" +
-                    "HR tools and authentication for CRUD operations with employee data"
+                    " HR tools and authentication for CRUD operations with employee data"
                 ]
 
             },
@@ -64,22 +64,55 @@ var parallaxData=[
                 firstLine:"Programming Languages",
                 points:[
                     "Javascript",
+                    // "Backbone.js",
+                    // "Angular.js",
+                    // "React.js",
+                    // "Jquery.js",
+                    // "underscore.js / lodash.js",
+                    // "D3.js",
+                    // "Ruby on Rails",
+                    "Ruby",
+                    // "Yeoman, Bower & Grunt",                    
+                    "Java",
+                    "Python",
+                    "C", 
+                    "C++",
+                    "Ocaml",
+                    "PHP"
+                    "SQL",
+                    "SVG",
+                    "JSON",
+                    "XML",
+                    "HTML5",
+                    "CSS3",
+                    "I even know some assembly, but please dont ask me to write any!"
+                ]
+            },
+            {
+                key: "programming libraries",
+                firstLine:"Libraries",
+                points:[
+                    // "Javascript",
                     "Backbone.js",
                     "Angular.js",
                     "React.js",
                     "Jquery.js",
                     "underscore.js / lodash.js",
                     "D3.js",
-                    "Ruby on Rails",
+                    "C3.js",
+                    "Three.js",
+                    // "Ruby on Rails",
+                    "Rails",
+                    "Vagrant",
                     "Yeoman, Bower & Grunt",
-                    "Ocaml",
-                    "Java",
-                    "Python",
-                    "C and C++",
-                    "SVG",
-                    "HTML5",
-                    "CSS3",
-                    "I even know some assembly, but please dont ask me to write any!"
+                    // "Ocaml",
+                    // "Java",
+                    // "Python",
+                    // "C and C++",
+                    // "SVG",
+                    // "HTML5",
+                    // "CSS3",
+                    // "I even know some assembly, but please dont ask me to write any!"
                 ]
             },
             {
@@ -89,6 +122,8 @@ var parallaxData=[
                     "Windows 8",
                     "Mac OsX",
                     "Ubuntu",
+                    "Virtual Box",
+                    "Source Tree",
                     "Photoshop",
                     "Illustrator",
                     "Gimp",
@@ -97,6 +132,7 @@ var parallaxData=[
                     "Garage Band",
                     "DreamWeaver",
                     "Google Apps",
+                    "Google Sketchup",
                     "Microsoft Office Suite",
                     "Quick study for anything and everything else"
                 ]
