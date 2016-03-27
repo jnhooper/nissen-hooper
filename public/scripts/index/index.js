@@ -177,7 +177,25 @@ var parallaxData=[
         imageSrc:"http://www.chem.umn.edu/groups/gagliardi/pics/Gop1.jpg",
         imageAlt:"University of Minnesota, Summa Cum Laude, hire, programmer, javascript, developer, nissenhooper, nissen-hooper," +
         "nissen hooper",
-        html:[{
+        html:[
+        {
+            key:"university_of_mn_bs",
+            firstLine:"University of Minnesota - CSE",
+            secondLine:"Bachelor's of Science",
+            dates:"2014-2016",
+            points:[
+                "Created and maintained a framework for visualizing data for the OpenKim Project",
+                "International Computer Programming Competition",
+                "Studies focused on Full Stack Engineering, with classes on Databases, Networking, Web Programming,"+
+                " User Interface and Design etc.",
+                "Manually changed buffer management policy for PostgresSQL",
+                "Created a Peer-to-Peer network using Ruby",
+                "Created a 'Photoshop lite' in C++",
+                "Developed an android prototype for non-profit",
+                "Created a grocery store simulator to gauge the benefit of hiring more bag boys"
+            ]
+        },
+        {
             key:"university_of_mn_ba",
             firstLine:"University of Minnesota - CLA",
             secondLine:"Suma Cum Laude - BA",
@@ -190,19 +208,9 @@ var parallaxData=[
                 "Interviewed Grammy Nominated band for local television station",
                 "Italian Tutor"
             ]
-        },
-        {
-            key:"university_of_mn_bs",
-            firstLine:"University of Minnesota - CSE",
-            secondLine:"Bachelor's of Science",
-            dates:"2014-2016",
-            points:[
-                "Created and maintained a framework for visualizing data for the OpenKim Project",
-                "International Computer Programming Competition",
-                "Studies focused on web technologies",
-                "Created a grocery store simulator to gauge the benefit of hiring more bag boys"
-            ]
-        }]
+        }
+        
+        ]
     }
 ];
 
