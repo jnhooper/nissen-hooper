@@ -15,12 +15,12 @@ var parallaxData=[
               secondLine:"Software Consultant",
               dates:"6/2016-10/2016",
               points:[
-                  "Worked with backed team to create and integrate new features for premium customer facing products",
+                  "Worked with back end team to create and integrate new features for premium customer facing products",
                   "Created standalone tools and services to be used throughout the codebase",
-                  "Worked as Senior Front End Engineer on one of two teams in the tasked with merging two products",
-                  "Maintained a large code base written with two conflicting Javasctipt libraires",
-                  "Updated outdated code to better adhere to modern standards",
-                  "Trained new developers on the inner workings of the code base"
+                  "Worked as Senior Front End Engineer on one of two teams tasked with merging two products",
+                  "Maintained a large codebase written with two conflicting Javasctipt libraires",
+                  "Updated and improved outdated code to better adhere to modern standards",
+                  "Trained new developers on the inner workings of the codebase"
               ]
 
           },
