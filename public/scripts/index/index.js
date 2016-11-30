@@ -3,12 +3,27 @@ var parallaxData=[
     {
         title:"Work Experience",
         key:"Work_exp",
-        imageSrc:"http://s3.amazonaws.com/edcanvas-uploads/199453/dropbox/1388699059/coding.jpg",
+        imageSrc:"https://tctechcrunch2011.files.wordpress.com/2015/04/codecode.jpg?w=738",
         imageAlt:"work experience, resume, John, Imagine Print Solutions, javascript, coding, developer, front-end, " +
         "frontend, frontend engineer, front end engineer, front-end, engineer, job, hire, programmer, javascript, " +
         "developer, nissenhooper, nissen-hooper," +
         "nissen hooper",
         html:[
+          {
+              key:"calabrio_work",
+              firstLine:"Calabrio",
+              secondLine:"Software Consultant",
+              dates:"6/2016-10/2016",
+              points:[
+                  "Worked with backed team to create and integrate new features for premium customer facing products",
+                  "Created standalone tools and services to be used throughout the codebase",
+                  "Worked as Senior Front End Engineer on one of two teams in the tasked with merging two products",
+                  "Maintained a large code base written with two conflicting Javasctipt libraires",
+                  "Updated outdated code to better adhere to modern standards",
+                  "Trained new developers on the inner workings of the code base"
+              ]
+
+          },
             {
                 key:"Umn_work",
                 firstLine:"University of Minnesota",
@@ -70,18 +85,10 @@ var parallaxData=[
                 firstLine:"Programming Languages",
                 points:[
                     "Javascript",
-                    // "Backbone.js",
-                    // "Angular.js",
-                    // "React.js",
-                    // "Jquery.js",
-                    // "underscore.js / lodash.js",
-                    // "D3.js",
-                    // "Ruby on Rails",
                     "Ruby",
-                    // "Yeoman, Bower & Grunt",                    
                     "Java",
                     "Python",
-                    "C", 
+                    "C",
                     "C++",
                     "Ocaml",
                     "PHP",
@@ -98,27 +105,20 @@ var parallaxData=[
                 key: "programming libraries",
                 firstLine:"Libraries",
                 points:[
-                    // "Javascript",
+                    "React.js",
                     "Backbone.js",
                     "Angular.js",
-                    "React.js",
                     "Jquery.js",
+                    "Dojo.js",
                     "underscore.js / lodash.js",
                     "D3.js",
                     "C3.js",
                     "Three.js",
-                    // "Ruby on Rails",
                     "Rails",
                     "Vagrant",
                     "Yeoman, Bower & Grunt",
-                    // "Ocaml",
-                    // "Java",
-                    // "Python",
-                    // "C and C++",
-                    // "SVG",
-                    // "HTML5",
-                    // "CSS3",
-                    // "I even know some assembly, but please dont ask me to write any!"
+                    "Git",
+                    "SVN"
                 ]
             },
             {
@@ -174,7 +174,7 @@ var parallaxData=[
     {
         title:"Education",
         key:"Education",
-        imageSrc:"http://www.chem.umn.edu/groups/gagliardi/pics/Gop1.jpg",
+        imageSrc:"http://lawprofessors.typepad.com/.a/6a00d8341bfae553ef01b8d0a07286970c-pi",
         imageAlt:"University of Minnesota, Summa Cum Laude, hire, programmer, javascript, developer, nissenhooper, nissen-hooper," +
         "nissen hooper",
         html:[
@@ -209,7 +209,7 @@ var parallaxData=[
                 "Italian Tutor"
             ]
         }
-        
+
         ]
     }
 ];
@@ -226,4 +226,3 @@ React.render(
         });
     }
 );
-

@@ -72,10 +72,10 @@ var parallaxData=[
                     // "D3.js",
                     // "Ruby on Rails",
                     "Ruby",
-                    // "Yeoman, Bower & Grunt",                    
+                    // "Yeoman, Bower & Grunt",
                     "Java",
                     "Python",
-                    "C", 
+                    "C",
                     "C++",
                     "Ocaml",
                     "PHP"
@@ -92,7 +92,6 @@ var parallaxData=[
                 key: "programming libraries",
                 firstLine:"Libraries",
                 points:[
-                    // "Javascript",
                     "Backbone.js",
                     "Angular.js",
                     "React.js",
@@ -198,4 +197,3 @@ React.render(
         });
     }
 );
-
