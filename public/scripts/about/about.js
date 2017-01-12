@@ -7,7 +7,7 @@ var aboutMe=[
         paragraph:"I am a front end developer living in Minneapolis. I graduated in 2012 with Summa Cum Laude honors from " +
         "The University of Minnesota. I started off as a self taught computer programmer, but went back to school after " +
         "working for a year in the field. I finished my second degree in two years, while working as a developer part time " +
-        " and maintaining a high GPS. Javascript is my first love, however I am always playing around in several other languages. " +
+        " and maintaining a high GPA. Javascript is my first love, however I am always playing around in several other languages. " +
         "<br>" +
         "Besides programming languages I am also fluent in Italian, and have lived and worked on three different continents." +
         " ",
